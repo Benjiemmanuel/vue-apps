@@ -1,38 +1,32 @@
 <template>
     <div class="calc">
-               <!-- Calculator screen  in row1-->
         <div class="display"><h5>{{result || 0}}</h5>
         </div>
 
-            <!-- A portion of div that holds our four buttons in column in row2-->
         <div>
             <button class="operator" @click="del" >DEL</button>
             <button class="operator" @click="clear">AC</button>
             <button class="operator" @click="percentage">%</button>
             <button class="operator" @click="appendToExpression('/')">/</button>
         </div>
-        <!-- A portion of div that holds our four buttons in column in row3-->
          <div>
             <button @click="appendToExpression('7')">7</button>
             <button @click="appendToExpression('8')">8</button>
             <button @click="appendToExpression('9')">9</button>
             <button class="operator" @click="appendToExpression('*')">x</button>
         </div>
-        <!-- A portion of div that holds our four buttons in column in row4-->
          <div>
             <button @click="appendToExpression('4')">4</button>
             <button @click="appendToExpression('5')">5</button>
             <button @click="appendToExpression('6')">6</button>
             <button class="operator" @click="appendToExpression('-')">-</button>
         </div>
-        <!-- A portion of div that holds our four buttons in column in row5-->
          <div>
             <button @click="appendToExpression('1')">1</button>
             <button @click="appendToExpression('2')">2</button>
             <button @click="appendToExpression('3')">3</button>
             <button class="operator" @click="appendToExpression('+')">+</button>
         </div>
-        <!-- A portion of div that holds our four buttons in column in row6-->
          <div>
             <button @click="appendToExpression('00')">00</button>
             <button @click="appendToExpression('0')">0</button>

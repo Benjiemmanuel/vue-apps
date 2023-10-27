@@ -1,22 +1,17 @@
 <template>
 <div id="app">
-      <!-- <Heading/>
-    <Calculator/> -->
-    <Weather/>
-    <!-- <button class="weather-btn">Click</button> -->
+    <Heading/>
+    <Calculator/> 
 </div>  
 </template>
 <script>
 import Heading from './components/Heading.vue';
 import Calculator from './components/Calculator.vue';
-import Weather from './components/Weather.Vue';
-import WeatherVue from './components/Weather.vue';
 export default{
   name: 'apps',
   components:{
     Heading,
      Calculator,
-     Weather
    
   }
 }
